@@ -11,3 +11,5 @@ The linear model has an R-squared value of 71.5% which means that the model can 
 
 Being that the specifications for the MechaCar desisgn is required to have a variance not exceeding 100 pounds per sqaure inch, we can conclude that both lot1 and lot2 meet the specifications because the variance is below 100.  
 
+## Study Design: MechaCar vs Competition
+A statistical study that would compare MechaCar vs competition would be to compare MPG across several models.  The null hypotheses is that price does not dictate MPG. I would perform a linear regression analysis with coefficients including MPG, price, and manufacturer.  After gathering the data for multiple brands, a model can be run to predict price based on MPG.
