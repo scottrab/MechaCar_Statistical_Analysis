@@ -6,3 +6,8 @@ The coefficients that provided a non-random amount of variance to predict MPG va
 The slope of the linear model is not considered to be zero because there is a medium to strong linear relationship in the model to predict MPG.
 The linear model has an R-squared value of 71.5% which means that the model can predict MPG with 71.5% accuracy, which is pretty good.
 
+
+## Summary Statistics on Suspension Coils
+
+Being that the specifications for the MechaCar desisgn is required to have a variance not exceeding 100 pounds per sqaure inch, we can conclude that both lot1 and lot2 meet the specifications because the variance is below 100.  
+
