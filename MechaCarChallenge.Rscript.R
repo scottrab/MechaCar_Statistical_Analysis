@@ -16,11 +16,8 @@ s = read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors=F)
 ##summarize suspension coil with mean, median and variance
 summarize_s = s ~ summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI),.groups='keep')
 
-##lot summary for suspension  model
+##collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots
 Lot_summary = s ~ group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI),.groups='keep')
-
-##run t-test using log
-t.test(log10(s$PSI),mu=mean(log10(s$PSI)))
 
 ##run t-test for lot 1
 t.test(subset=s$Manufacturing_Lot=="Lot1",(s$PSI),mu=mean(s$PSI))
